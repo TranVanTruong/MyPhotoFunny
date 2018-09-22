@@ -14,6 +14,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.btech.funnyphoto.AdmodData;
 import com.btech.funnyphoto.R;
 import com.btech.funnyphoto.imagecrop.BitmapUtil;
 import com.btech.funnyphoto.imagecrop.CropHandler;
@@ -51,7 +52,7 @@ public class MainActivity extends Activity implements CropHandler {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainnew);
-
+        new AdmodData(this);
         top_holder = (RelativeLayout) findViewById(R.id.top_holder);
         bottom_holder = (RelativeLayout) findViewById(R.id.bottom_holder);
         step_number = (RelativeLayout) findViewById(R.id.step_number);

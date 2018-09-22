@@ -28,6 +28,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.btech.funnyphoto.AdmodData;
 import com.btech.funnyphoto.R;
 import com.btech.funnyphoto.adapter.RecyclerViewFrameAdapter;
 import com.btech.funnyphoto.collageView.MultiTouchListener;
@@ -86,6 +87,7 @@ public class EditActivity extends AppCompatActivity implements OnClickListener, 
         init();
         setupToolbar();
         makeFolder();
+        new AdmodData(this);
 
 
         src = BitmapFactory.decodeFile(Constant.PICURE_PATH);

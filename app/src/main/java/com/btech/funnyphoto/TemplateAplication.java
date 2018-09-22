@@ -47,7 +47,7 @@ public class TemplateAplication extends Application {
         super.onCreate();
         mInstance = this;
         initImageLoader(getApplicationContext());
-
+        new AdmodData();
         sharedPreferences = getSharedPreferences(getString(R.string.app_name), Context.MODE_PRIVATE);
 
 

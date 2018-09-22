@@ -18,6 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.btech.funnyphoto.AdmodData;
 import com.btech.funnyphoto.R;
 import com.btech.funnyphoto.adapter.RecyclerViewGalleryAdapter;
 import com.btech.funnyphoto.model.TemplateListModel;
@@ -152,7 +153,7 @@ public class GallaryCollageActivity extends AppCompatActivity implements Recycle
 
                     // Defined in res/values/strings.xml
                     //interstitial.setAdUnitId("ca-app-pub-4489720276000590/9232166860");
-                    interstitial.setAdUnitId(getString(R.string.fulladd_id));
+                    interstitial.setAdUnitId(AdmodData.Admod.interstial_ap_id);
                     // Request for Ads
                     AdRequest adRequest = new AdRequest.Builder().addTestDevice("E4195931F1BE473915004D979ED94A8E").build();
                     //AdRequest adRequest = new AdRequest.Builder().build();
