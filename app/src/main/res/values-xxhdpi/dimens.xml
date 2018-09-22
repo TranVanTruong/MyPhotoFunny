@@ -1,0 +1,7 @@
+<resources>
+
+
+    <dimen name="icon_height_width">50dp</dimen>
+    <dimen name="actionbar_height">56dp</dimen>
+
+</resources>

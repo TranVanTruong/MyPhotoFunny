@@ -1,0 +1,146 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/activity_menubar_toolbar"
+        layout="@layout/tool_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeTextview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.55">
+
+        <com.btech.funnyphoto.comman.MyViewPager
+            android:id="@+id/reviewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.45"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/tvLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:padding="@dimen/padding_10dp"
+            android:text="MY PHOTO COLLAGE"
+            android:textColor="@color/thirdColor"
+            android:textSize="@dimen/font_30sp"/>
+
+
+        <TextView
+            android:id="@+id/tvLable1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLable"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/padding_10dp"
+            android:text="Create My best Photo Collage"
+            android:textColor="@color/thirdColor"
+            android:textSize="@dimen/font_18sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tvLable1"
+            android:layout_margin="@dimen/margin_30dp"
+            android:gravity="center">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50">
+
+                <ImageView
+                    android:id="@+id/ivGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/tvGrid"
+                    android:padding="@dimen/margin_left_3dp"
+                    android:src="@drawable/layout"/>
+
+                <TextView
+                    android:id="@+id/tvGrid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/margin_2dp"
+                    android:text="Grid"
+                    android:textColor="@color/thirdColor"
+                    android:textSize="@dimen/font_16sp"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50">
+
+                <ImageView
+                    android:id="@+id/ivFrames"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/tvTemplate"
+                    android:src="@drawable/magazin"/>
+
+                <TextView
+                    android:id="@+id/tvTemplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/margin_2dp"
+                    android:text="Template"
+                    android:textColor="@color/thirdColor"
+                    android:textSize="@dimen/font_16sp"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/thirdColor">
+
+
+        <TextView
+            android:id="@+id/tvMyGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/padding_5dp"
+            android:singleLine="true"
+            android:text="My Gallery"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_26sp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

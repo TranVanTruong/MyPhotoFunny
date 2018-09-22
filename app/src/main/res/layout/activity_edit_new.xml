@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/activity_menubar_toolbar"
+        layout="@layout/tool_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/activity_edit_rl_convertview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/flMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+
+                    <com.btech.funnyphoto.comman.RoundedCornerImageView
+                        android:id="@+id/activity_edit_img_selected_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/activity_edit_hsv_frame_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fourthColor"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <com.luseen.luseenbottomnavigation.BottomNavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:bnv_active_color="@color/firstColor"
+        app:bnv_active_text_size="@dimen/bottom_navigation_text_size_active"
+        app:bnv_colored_background="true"
+        app:bnv_inactive_text_size="@dimen/bottom_navigation_text_size_inactive"
+        app:bnv_shadow="true"
+        app:bnv_tablet="false"
+        app:bnv_viewpager_slide="true"
+        app:bnv_with_text="true"/>
+
+
+</LinearLayout>
